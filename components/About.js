@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="about">
+    <div id="about" className="about">
       <div className="container m-auto hidescroll  h-screen pt-28 xl:pt-28 overflow-scroll">
         <div className="flex justify-center  items-center text-white gap-10 flex-col-reverse lg:flex-row mt-5 lg:mt-0 lg:pt-38 xl:pt-0">
           <div className="w-4/4 lg:w-2/4 px-10 md:px-0 ">

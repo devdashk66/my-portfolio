@@ -1,9 +1,4 @@
 import Head from "next/head";
-import Fullpage, {
-  FullPageSections,
-  FullpageSection,
-  FullpageNavigation,
-} from "@ap.cx/react-fullpage";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
@@ -28,45 +23,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       {/*/////////////////////////////////////
     /////////////  Main Body   //////////////
     //////////////////////////////////////*/}
-      <Fullpage>
-        <FullPageSections>
-          <FullpageSection styles={styles}>
-            <Hero />
-          </FullpageSection>
-        </FullPageSections>
-      </Fullpage>
+      <Hero />
+      <About />
+      <Services />
+      <Works />
+      <Contact />
     </>
   );
-}
-
-{
-  /* <Fullpage>
-  <FullPageSections>
-    <FullpageSection>
-      <Hero />
-    </FullpageSection>
-    <FullpageSection>
-      <About />
-    </FullpageSection>
-    <FullpageSection>
-      <Services />
-    </FullpageSection>
-    <FullpageSection>
-      <Works />
-    </FullpageSection>
-    <FullpageSection>
-      <Review />
-    </FullpageSection>
-    <FullpageSection>
-      <Contact />
-    </FullpageSection>
-    <FullpageSection>
-      <Footer />
-    </FullpageSection>
-  </FullPageSections>
-</Fullpage>; */
 }

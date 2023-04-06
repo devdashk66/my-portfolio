@@ -14,7 +14,7 @@ const Header = () => {
   const [toggle, seToggle] = useState(false);
 
   return (
-    <header className=" sticky z-10 top-0 glassEffect  border-b-[.5px]  border-[#39b54a86] text-white py-5 px-4">
+    <header className=" fixed w-full z-50 top-0 glassEffect  border-b-[.5px]  border-[#39b54a86] text-white py-5 px-4">
       <nav className="container m-auto flex justify-between items-center">
         <div className="text-3xl font-bold">
           <Link href="/">
@@ -64,16 +64,36 @@ const Header = () => {
             </div>
             <ul className="text-xl flex flex-col gap-4">
               <li>
-                <Link href="/">Home</Link>
+                <Link onClick={() => seToggle(!toggle)} href="/">
+                  Home
+                </Link>
               </li>
 
               <li>
-                <Link href="/about">About</Link>
+                <Link onClick={() => seToggle(!toggle)} href="#about">
+                  About
+                </Link>
               </li>
-              <li>Services</li>
-              <li>Works</li>
-              <li>Clients</li>
-              <li>Contact</li>
+              <li>
+                <Link onClick={() => seToggle(!toggle)} href="#services">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link onClick={() => seToggle(!toggle)} href="#works">
+                  Works
+                </Link>
+              </li>
+              <li>
+                <Link onClick={() => seToggle(!toggle)} href="#clients">
+                  Clients
+                </Link>
+              </li>
+              <li>
+                <Link onClick={() => seToggle(!toggle)} href="#contact">
+                  Contact
+                </Link>
+              </li>
             </ul>
 
             <div className="mt-16 w-56  text-sm leading-7 text-gray-500">

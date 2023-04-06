@@ -12,6 +12,13 @@
   font-family: "Lora", serif;
   letter-spacing: 0.3px;
 }
+
+html {
+  scroll-behavior: smooth !important;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
 }
