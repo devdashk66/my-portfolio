@@ -1,9 +1,4 @@
 import Head from "next/head";
-import Fullpage, {
-  FullPageSections,
-  FullpageSection,
-  FullpageNavigation,
-} from "@ap.cx/react-fullpage";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
@@ -13,10 +8,6 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  const styles = {
-    height: "100vh",
-    weight: "100%",
-  };
   return (
     <>
       {/*/////////////////////////////////////
@@ -32,41 +23,23 @@ export default function Home() {
       {/*/////////////////////////////////////
     /////////////  Main Body   //////////////
     //////////////////////////////////////*/}
-      <Fullpage>
-        <FullPageSections>
-          <FullpageSection styles={styles}>
-            <Hero />
-          </FullpageSection>
-        </FullPageSections>
-      </Fullpage>
+      <div>
+        <div>
+          <Hero />
+
+          <About />
+
+          <Services />
+
+          <Works />
+
+          <Review />
+
+          <Contact />
+
+          <Footer />
+        </div>
+      </div>
     </>
   );
-}
-
-{
-  /* <Fullpage>
-  <FullPageSections>
-    <FullpageSection>
-      <Hero />
-    </FullpageSection>
-    <FullpageSection>
-      <About />
-    </FullpageSection>
-    <FullpageSection>
-      <Services />
-    </FullpageSection>
-    <FullpageSection>
-      <Works />
-    </FullpageSection>
-    <FullpageSection>
-      <Review />
-    </FullpageSection>
-    <FullpageSection>
-      <Contact />
-    </FullpageSection>
-    <FullpageSection>
-      <Footer />
-    </FullpageSection>
-  </FullPageSections>
-</Fullpage>; */
 }
